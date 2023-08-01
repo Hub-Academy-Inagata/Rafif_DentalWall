@@ -1,0 +1,23 @@
+{
+  "name": "rafif_dentalwall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch ./asset/css/main.scss ./asset/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hub-Academy-Inagata/Rafif_DentalWall.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hub-Academy-Inagata/Rafif_DentalWall/issues"
+  },
+  "homepage": "https://github.com/Hub-Academy-Inagata/Rafif_DentalWall#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}
