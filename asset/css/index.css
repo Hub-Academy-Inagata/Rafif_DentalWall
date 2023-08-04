@@ -41,7 +41,7 @@ nav {
 }
 
 .card-patiens {
-    background-color: #FFFFFF !important;
+    /* background-color: #FFFFFF !important; */
     left: 75% !important;
     translate: -35% -35%;
 }
@@ -167,7 +167,7 @@ nav {
 
 .integrated-card {
     background-color: #FFFFFF;
-    /* width: 31.75% !important; */
+    height: 100% !important;
 }
 
 .integrated-card:hover {
@@ -269,3 +269,130 @@ nav {
 .copyrights-container {
     border-top: 3px solid #E8E8E8 !important;
 }
+/* copyrights end */
+
+/* ========= Tablet ==========*/
+
+@media screen and (max-width: 991.98px) { 
+    .container-lg {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .container-lg > .px-5 , .result-container, .result-container > .p-5{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* header */
+    .header-title {
+        font-size: 3.5rem !important;
+    }
+    .inter-card > p {
+        font-size: 1rem !important;
+    }
+    .inter-card > a {
+        font-size: 0.9rem !important;
+    }
+    .card-patiens > img {
+        width : 90px !important;
+        right: 30px !important;
+        top: 40% !important;
+        translate: -10% 50% !important;
+    }
+    .w1-img {
+        width: 80% !important;
+    }
+
+    /* header end */
+
+    /* result */
+    .result-container > .p-5{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .result-container > .p-5 > .mx-5.position-relative {
+        margin: 0 !important;
+    }
+    .w-50.result-title-container {
+        width: 75% !important;
+    }
+    .result-title {
+        font-size: 3rem !important;
+    }
+    .card-result {
+        height: 100% !important;
+    }
+    .card-result > p {
+        font-size: 1rem !important;
+    }
+    .card-result-title {
+        font-size: 2.5rem !important;
+    }
+    .devider.w-100.bg-transparent.d-block {
+        height : 8vh !important;
+    }
+    /* result end */
+
+    /* accomplish */
+    div.ac-content-container {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+    .woman-bg2 > img {
+        margin: 0 !important;
+        width: 160% !important;
+    }
+    /* accomplish end */
+
+    /* time-card */
+    div.container-time {
+        padding: 2rem !important;
+        border-radius: 20px !important
+    }
+    .time-content {
+        width: 100% !important;
+    }
+    /* time-card end */
+
+    /* integrated */
+    .integrated-title {
+        font-size: 3rem !important;
+    }
+
+    p.integrated-text {
+        line-height: 1.5 !important;
+    }
+
+    /* OF */
+    .of-title {
+        font-size: 2.5rem !important;
+    }
+    /* OF end */
+
+    /* article */
+    div.article-title-container {
+        flex-wrap: wrap !important;
+    }
+
+    h1.article-title {
+        width: 100% !important;
+        margin-bottom: 20px;
+        font-size: 3rem !important;
+    }
+    /* article end */
+}
+
+/* @media screen and (max-width: 500px) { 
+    .container-lg {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .container-lg > .px-5 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .header-title {
+        font-size: 2 rem !important;
+        color: red !important;
+    }
+} */
