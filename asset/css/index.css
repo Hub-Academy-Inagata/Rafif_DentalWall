@@ -90,6 +90,12 @@ nav {
     content: none !important;
 }
 
+.btn-close {
+    top: -15% !important;
+    right: 0 !important;
+    background-color: #FF6913 !important;
+}
+
 .watch-btn {
     background-color: #FF6913 !important;
 }

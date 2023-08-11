@@ -178,11 +178,30 @@
         <div class="position-absolute w-100">
           <div class="position-relative mb-5">
             <img src="asset/image/index/bg-vid.png" alt="" class="w-100">
-            <a href="" class="position-absolute top-50 start-50 translate-middle">
+            <a href="" class="position-absolute top-50 start-50 translate-middle startvid-btn" type="button"
+              data-bs-toggle="modal" data-bs-target="#modalvideo" data-src="https://www.youtube.com/embed/CIHc2B06PFc">
               <img src="asset/image/index/watch-btn.svg" alt="" class="img-fluid ">
             </a>
           </div>
         </div>
+
+        <!-- modal video -->
+        <div class="modal fade" id="modalvideo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content position-relative">
+              <button type="button" class="btn-close p-2 ms-auto position-absolute" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+              <div class="ratio ratio-16x9">
+                <iframe src="" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen id="video" class="embed-responsive-item">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="devider w-100 bg-transparent d-block"></div>
       </div>
     </div>
@@ -635,6 +654,21 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    var videoSrc
+
+    document.querySelector('.startvid-btn').addEventListener('click', function (e) {
+      videoSrc = document.querySelector('.startvid-btn').getAttribute('data-src')
+    })
+
+    document.getElementById('modalvideo').addEventListener('shown.bs.modal', (e) => {
+      video.setAttribute('src', videoSrc)
+    })
+
+    document.getElementById('modalvideo').addEventListener('hide.bs.modal', (e) => {
+      document.getElementById('video').setAttribute('src', videoSrc)
+    })
   </script>
 </body>
 
